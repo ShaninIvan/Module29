@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.4s;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header{
+    height: 100px;
+    padding: 20px;
+    background-color: rgb(155, 202, 200);
+    box-shadow: 0 3px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.response{
+    color: rgb(245, 145, 13);
+    animation: response 1s linear 1s forwards;
+}
+
+@keyframes response{
+    0%{
+        opacity: 1;
+    }100%{
+        opacity: 0;
+        display: none;
+    }
+}
+
+.header__logo{
+    margin-right: 30px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.modalAuth{
+    display: none;
+    z-index: 10;
+    border: 1px solid black;
+    padding: 20px;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.modalAuth *{
+    margin-bottom: 5px;
+}
+
+.modalShow{
+    display: block;
+}
+
+main{
+    background-color: rgb(219, 241, 243);
+    height: 100%;
+    padding: 20px;
+}
+
+footer{
+    height: 50px;
+    background-color: rgb(155, 202, 200);
+}

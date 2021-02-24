@@ -1,0 +1,1 @@
+<img src="https://lms.skillfactory.ru/static/base-theme-ironwood/images/logo.png" alt="SkillFactory">
